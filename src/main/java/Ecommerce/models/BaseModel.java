@@ -8,6 +8,8 @@ import java.util.Date;
 @Getter
 @Setter
 
+// class for auditing attributes
+
 public class BaseModel {
     private Long id;
     private Date createdAt;
