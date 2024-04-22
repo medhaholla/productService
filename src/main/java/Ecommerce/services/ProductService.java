@@ -12,9 +12,9 @@ public interface ProductService {
 
     Product getSingleProduct(long id);
 
-    Product addNewProduct(Product product);
+    Product addNewProduct(ProductDto product);
 
-    String updateProduct(long id, Product product);
+    Product updateProduct(long id, Product product);
 
-    String deleteProduct(long id);
+    boolean deleteProduct(long id);
 }
