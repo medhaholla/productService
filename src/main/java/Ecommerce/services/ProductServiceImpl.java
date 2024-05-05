@@ -66,6 +66,7 @@ public class ProductServiceImpl implements ProductService {
         RestTemplate restTemplate = restTemplateBuilder.build();
         ResponseEntity<FakeStoreProductDto> response = restTemplate.postForEntity("https://fakestoreapi.com/products", product, FakeStoreProductDto.class);
 
+
         FakeStoreProductDto productDto = response.getBody();
 
         return convertProductDtoToProduct(productDto);
@@ -76,7 +77,13 @@ public class ProductServiceImpl implements ProductService {
         return null;
     }
 
+    public Product replaceProduct(long id, Product product) {
+
+        return product;
+    }
+
     @Override
+
     public boolean deleteProduct(long id) {
         return false;
     }

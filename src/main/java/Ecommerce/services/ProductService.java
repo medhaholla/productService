@@ -14,6 +14,8 @@ public interface ProductService {
 
     Product addNewProduct(ProductDto product);
 
+    Product replaceProduct(long id, Product product);
+
     Product updateProduct(long id, Product product);
 
     boolean deleteProduct(long id);
